@@ -1,3 +1,7 @@
+/* Autor: Lucas de Camargo Barros de Castro *
+ * Ultima alteracao: 05/10/2015 */
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
