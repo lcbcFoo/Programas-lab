@@ -1,4 +1,4 @@
-# F---X29
+# F-X29
 
 Programas para uso nos labs de fisica 
 
