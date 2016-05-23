@@ -15,3 +15,13 @@ gcc mmq.c -o mmq -std=c99 -lm
 Execute com:
 
 ./mmq
+
+2) prop.c (Calculo de medias, desvios, erros, propagacao de erros)
+
+Compile com:
+
+gcc pop.c -o prop -std=c99 -lm
+
+Execute com:
+
+./prop
