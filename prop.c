@@ -1,9 +1,9 @@
+/* Autor: Lucas Castro (Foo) *
+ * Ultima modificacao: 23/05/2016 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
-
-/* colinha bacana: http://www.fisica.ufmg.br/~lab1/notas_aula/Medidas_e_incertezas.pdf */
 
 int main () {
 
@@ -44,7 +44,6 @@ int main () {
         printf("\nInsira o numero de medidas: \n");
         scanf("%d", &N);
 
-        /* Aloca vetor de double */
         valoresX = malloc (N * sizeof(double));
 
         /* Recebe as medidas */
@@ -85,8 +84,6 @@ int main () {
         printf("Desvio Padrao = %.4Lf\n", desvios[j]);
         printf("Erro Estatistico = %.4Lf\n", erros[j]);
         printf("Erros Totais = %.4Lf\n", errosTotais[j]);
-
-        /* Desaloca vetor de double */
         free(valoresX);
     }
 
@@ -116,7 +113,7 @@ int main () {
     printf("Erro calculado = %.4Lf\n", erroCalc);
 
 
-    /* Desaloca vetores de double */
+    /* Desaloca memoria */
     free(desvios);
     free(erros);
     free(potencias);
