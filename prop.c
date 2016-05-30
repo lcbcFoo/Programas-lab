@@ -44,7 +44,7 @@ int main () {
         printf("\nInsira o numero de medidas: \n");
         scanf("%d", &N);
 
-        valoresX = malloc (N * sizeof(double));
+        valoresX = malloc (N * sizeof(long double));
 
         /* Recebe as medidas */
         printf("Insira os %d valores medidos:\n", N);
@@ -61,7 +61,7 @@ int main () {
 
         /* Calcula / Imprime a media */
         medias[j] = soma / N;
-        printf("\nMedia = %.4Lf\n", medias[j]);
+        printf("\nMedia = %Lf\n", medias[j]);
 
         /* Calcula / Imprime o desvio padrao, os erros exp e os erros totais */
         soma = 0;
@@ -81,9 +81,9 @@ int main () {
             errosTotais[j] = sqrt(pow(erros[j], 2) + pow(errosIns[j], 2));
         }
             
-        printf("Desvio Padrao = %.4Lf\n", desvios[j]);
-        printf("Erro Estatistico = %.4Lf\n", erros[j]);
-        printf("Erros Totais = %.4Lf\n", errosTotais[j]);
+        printf("Desvio Padrao = %Lf\n", desvios[j]);
+        printf("Erro Estatistico = %Lf\n", erros[j]);
+        printf("Erros Totais = %Lf\n", errosTotais[j]);
         free(valoresX);
     }
 
@@ -94,7 +94,7 @@ int main () {
         calculado *= pow(medias[j], potencias[j]);
 
 
-    printf("\nResultado obtido = %.4Lf\n", calculado);
+    printf("\nResultado obtido = %Lf\n", calculado);
 
 
 
@@ -110,7 +110,7 @@ int main () {
     }
 
     erroCalc = calculado * sqrt(soma);
-    printf("Erro calculado = %.4Lf\n", erroCalc);
+    printf("Erro calculado = %Lf\n", erroCalc);
 
 
     /* Desaloca memoria */
